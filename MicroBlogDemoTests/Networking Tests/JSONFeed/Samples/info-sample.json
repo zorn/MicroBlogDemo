@@ -1,0 +1,7 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "JSON Feed Title",
+    "home_page_url": "https://jsonfeed.org",
+    "feed_url": "https://micro.blog/posts/all",
+    "items": [],
+}

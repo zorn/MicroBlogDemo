@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A53FDD32164371E003C8B4D /* JSONFeedAuthorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDD22164371E003C8B4D /* JSONFeedAuthorTests.swift */; };
+		1A53FDD52164373F003C8B4D /* JSONFeedAttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDD42164373F003C8B4D /* JSONFeedAttachmentTests.swift */; };
+		1A53FDD72164375F003C8B4D /* JSONFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDD62164375F003C8B4D /* JSONFeedTests.swift */; };
+		1ABED7D02161AB4E00972552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7CF2161AB4E00972552 /* AppDelegate.swift */; };
+		1ABED7D22161AB4E00972552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7D12161AB4E00972552 /* ViewController.swift */; };
+		1ABED7D42161AB4F00972552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED7D32161AB4F00972552 /* Assets.xcassets */; };
+		1ABED7D72161AB4F00972552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED7D52161AB4F00972552 /* Main.storyboard */; };
+		1ABED7F02161ACDB00972552 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7EF2161ACDB00972552 /* Session.swift */; };
+		1ABED7F22161ACF100972552 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7F12161ACF100972552 /* ServerConnection.swift */; };
+		1ABED7F42161AD3000972552 /* ServerConnectionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7F32161AD3000972552 /* ServerConnectionConfiguration.swift */; };
+		1ABED7F72161ADAF00972552 /* MicroBlogConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7F62161ADAF00972552 /* MicroBlogConfiguration.swift */; };
+		1ABED7FB2161AED200972552 /* RequestResponseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7FA2161AED200972552 /* RequestResponseProtocols.swift */; };
+		1ABED7FD2161AF1D00972552 /* RequestPostsAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7FC2161AF1D00972552 /* RequestPostsAll.swift */; };
+		1ABED8002161B03800972552 /* RequestPostAllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7FF2161B03800972552 /* RequestPostAllTests.swift */; };
+		1ABED8022161B34300972552 /* ServerConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED8012161B34300972552 /* ServerConnectionTests.swift */; };
+		1ABED8042161B4AA00972552 /* ResponsePostsAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED8032161B4AA00972552 /* ResponsePostsAll.swift */; };
+		1ABED8082161B53200972552 /* posts-all.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED8072161B53200972552 /* posts-all.json */; };
+		1ABED80A2161B67400972552 /* JSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED8092161B67400972552 /* JSONFeed.swift */; };
+		1ABED8122161C27F00972552 /* info-sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED8112161C27F00972552 /* info-sample.json */; };
+		1ABED8142161C9AC00972552 /* JSONFeedItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED8132161C9AC00972552 /* JSONFeedItemTests.swift */; };
+		1ABED8162161CA3700972552 /* item-sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED8152161CA3700972552 /* item-sample.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ABED7DF2161AB4F00972552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ABED7C42161AB4E00972552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ABED7CB2161AB4E00972552;
+			remoteInfo = MicroBlogDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A53FDD121642E7B003C8B4D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1A53FDD22164371E003C8B4D /* JSONFeedAuthorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedAuthorTests.swift; sourceTree = "<group>"; };
+		1A53FDD42164373F003C8B4D /* JSONFeedAttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedAttachmentTests.swift; sourceTree = "<group>"; };
+		1A53FDD62164375F003C8B4D /* JSONFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedTests.swift; sourceTree = "<group>"; };
+		1ABED7CC2161AB4E00972552 /* MicroBlogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroBlogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABED7CF2161AB4E00972552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ABED7D12161AB4E00972552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ABED7D32161AB4F00972552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ABED7D62161AB4F00972552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ABED7D82161AB4F00972552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ABED7D92161AB4F00972552 /* MicroBlogDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MicroBlogDemo.entitlements; sourceTree = "<group>"; };
+		1ABED7DE2161AB4F00972552 /* MicroBlogDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroBlogDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ABED7E42161AB4F00972552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ABED7EF2161ACDB00972552 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1ABED7F12161ACF100972552 /* ServerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		1ABED7F32161AD3000972552 /* ServerConnectionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnectionConfiguration.swift; sourceTree = "<group>"; };
+		1ABED7F62161ADAF00972552 /* MicroBlogConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroBlogConfiguration.swift; sourceTree = "<group>"; };
+		1ABED7FA2161AED200972552 /* RequestResponseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponseProtocols.swift; sourceTree = "<group>"; };
+		1ABED7FC2161AF1D00972552 /* RequestPostsAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPostsAll.swift; sourceTree = "<group>"; };
+		1ABED7FF2161B03800972552 /* RequestPostAllTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPostAllTests.swift; sourceTree = "<group>"; };
+		1ABED8012161B34300972552 /* ServerConnectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnectionTests.swift; sourceTree = "<group>"; };
+		1ABED8032161B4AA00972552 /* ResponsePostsAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePostsAll.swift; sourceTree = "<group>"; };
+		1ABED8072161B53200972552 /* posts-all.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "posts-all.json"; sourceTree = "<group>"; };
+		1ABED8092161B67400972552 /* JSONFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeed.swift; sourceTree = "<group>"; };
+		1ABED8112161C27F00972552 /* info-sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "info-sample.json"; sourceTree = "<group>"; };
+		1ABED8132161C9AC00972552 /* JSONFeedItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedItemTests.swift; sourceTree = "<group>"; };
+		1ABED8152161CA3700972552 /* item-sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "item-sample.json"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ABED7C92161AB4E00972552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABED7DB2161AB4F00972552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ABED7C32161AB4E00972552 = {
+			isa = PBXGroup;
+			children = (
+				1A53FDD121642E7B003C8B4D /* MyPlayground.playground */,
+				1ABED7CE2161AB4E00972552 /* MicroBlogDemo */,
+				1ABED7E12161AB4F00972552 /* MicroBlogDemoTests */,
+				1ABED7CD2161AB4E00972552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ABED7CD2161AB4E00972552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED7CC2161AB4E00972552 /* MicroBlogDemo.app */,
+				1ABED7DE2161AB4F00972552 /* MicroBlogDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ABED7CE2161AB4E00972552 /* MicroBlogDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED7CF2161AB4E00972552 /* AppDelegate.swift */,
+				1ABED7EE2161AC2E00972552 /* Networking */,
+				1ABED7D12161AB4E00972552 /* ViewController.swift */,
+				1ABED7D32161AB4F00972552 /* Assets.xcassets */,
+				1ABED7D52161AB4F00972552 /* Main.storyboard */,
+				1ABED7D82161AB4F00972552 /* Info.plist */,
+				1ABED7D92161AB4F00972552 /* MicroBlogDemo.entitlements */,
+			);
+			path = MicroBlogDemo;
+			sourceTree = "<group>";
+		};
+		1ABED7E12161AB4F00972552 /* MicroBlogDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED7ED2161AC2200972552 /* Networking Tests */,
+				1ABED7E42161AB4F00972552 /* Info.plist */,
+			);
+			path = MicroBlogDemoTests;
+			sourceTree = "<group>";
+		};
+		1ABED7ED2161AC2200972552 /* Networking Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED80D2161BF1D00972552 /* JSONFeed */,
+				1ABED8012161B34300972552 /* ServerConnectionTests.swift */,
+				1ABED7FE2161AFF300972552 /* Micro.Blog API Tests */,
+			);
+			path = "Networking Tests";
+			sourceTree = "<group>";
+		};
+		1ABED7EE2161AC2E00972552 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED7EF2161ACDB00972552 /* Session.swift */,
+				1ABED7F12161ACF100972552 /* ServerConnection.swift */,
+				1ABED7FA2161AED200972552 /* RequestResponseProtocols.swift */,
+				1ABED7F52161AD8B00972552 /* ServerConnectionConfiguration */,
+				1ABED7F82161AEA000972552 /* Micro.Blog API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1ABED7F52161AD8B00972552 /* ServerConnectionConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED7F32161AD3000972552 /* ServerConnectionConfiguration.swift */,
+				1ABED7F62161ADAF00972552 /* MicroBlogConfiguration.swift */,
+			);
+			path = ServerConnectionConfiguration;
+			sourceTree = "<group>";
+		};
+		1ABED7F82161AEA000972552 /* Micro.Blog API */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED8052161B4AF00972552 /* Models */,
+				1ABED7FC2161AF1D00972552 /* RequestPostsAll.swift */,
+				1ABED8032161B4AA00972552 /* ResponsePostsAll.swift */,
+			);
+			path = "Micro.Blog API";
+			sourceTree = "<group>";
+		};
+		1ABED7FE2161AFF300972552 /* Micro.Blog API Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED8062161B51000972552 /* Recorded Responses */,
+				1ABED7FF2161B03800972552 /* RequestPostAllTests.swift */,
+			);
+			path = "Micro.Blog API Tests";
+			sourceTree = "<group>";
+		};
+		1ABED8052161B4AF00972552 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED8092161B67400972552 /* JSONFeed.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1ABED8062161B51000972552 /* Recorded Responses */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED8072161B53200972552 /* posts-all.json */,
+			);
+			path = "Recorded Responses";
+			sourceTree = "<group>";
+		};
+		1ABED80D2161BF1D00972552 /* JSONFeed */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED8102161C26500972552 /* Samples */,
+				1A53FDD62164375F003C8B4D /* JSONFeedTests.swift */,
+				1ABED8132161C9AC00972552 /* JSONFeedItemTests.swift */,
+				1A53FDD22164371E003C8B4D /* JSONFeedAuthorTests.swift */,
+				1A53FDD42164373F003C8B4D /* JSONFeedAttachmentTests.swift */,
+			);
+			path = JSONFeed;
+			sourceTree = "<group>";
+		};
+		1ABED8102161C26500972552 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				1ABED8112161C27F00972552 /* info-sample.json */,
+				1ABED8152161CA3700972552 /* item-sample.json */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ABED7CB2161AB4E00972552 /* MicroBlogDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABED7E72161AB4F00972552 /* Build configuration list for PBXNativeTarget "MicroBlogDemo" */;
+			buildPhases = (
+				1ABED7C82161AB4E00972552 /* Sources */,
+				1ABED7C92161AB4E00972552 /* Frameworks */,
+				1ABED7CA2161AB4E00972552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MicroBlogDemo;
+			productName = MicroBlogDemo;
+			productReference = 1ABED7CC2161AB4E00972552 /* MicroBlogDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ABED7DD2161AB4F00972552 /* MicroBlogDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABED7EA2161AB4F00972552 /* Build configuration list for PBXNativeTarget "MicroBlogDemoTests" */;
+			buildPhases = (
+				1ABED7DA2161AB4F00972552 /* Sources */,
+				1ABED7DB2161AB4F00972552 /* Frameworks */,
+				1ABED7DC2161AB4F00972552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ABED7E02161AB4F00972552 /* PBXTargetDependency */,
+			);
+			name = MicroBlogDemoTests;
+			productName = MicroBlogDemoTests;
+			productReference = 1ABED7DE2161AB4F00972552 /* MicroBlogDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ABED7C42161AB4E00972552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Zorn Labs";
+				TargetAttributes = {
+					1ABED7CB2161AB4E00972552 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					1ABED7DD2161AB4F00972552 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1ABED7CB2161AB4E00972552;
+					};
+				};
+			};
+			buildConfigurationList = 1ABED7C72161AB4E00972552 /* Build configuration list for PBXProject "MicroBlogDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ABED7C32161AB4E00972552;
+			productRefGroup = 1ABED7CD2161AB4E00972552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ABED7CB2161AB4E00972552 /* MicroBlogDemo */,
+				1ABED7DD2161AB4F00972552 /* MicroBlogDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ABED7CA2161AB4E00972552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABED7D42161AB4F00972552 /* Assets.xcassets in Resources */,
+				1ABED7D72161AB4F00972552 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABED7DC2161AB4F00972552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABED8162161CA3700972552 /* item-sample.json in Resources */,
+				1ABED8082161B53200972552 /* posts-all.json in Resources */,
+				1ABED8122161C27F00972552 /* info-sample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ABED7C82161AB4E00972552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABED7F22161ACF100972552 /* ServerConnection.swift in Sources */,
+				1ABED80A2161B67400972552 /* JSONFeed.swift in Sources */,
+				1ABED7F72161ADAF00972552 /* MicroBlogConfiguration.swift in Sources */,
+				1ABED7D22161AB4E00972552 /* ViewController.swift in Sources */,
+				1ABED7FD2161AF1D00972552 /* RequestPostsAll.swift in Sources */,
+				1ABED7D02161AB4E00972552 /* AppDelegate.swift in Sources */,
+				1ABED7FB2161AED200972552 /* RequestResponseProtocols.swift in Sources */,
+				1ABED7F02161ACDB00972552 /* Session.swift in Sources */,
+				1ABED8042161B4AA00972552 /* ResponsePostsAll.swift in Sources */,
+				1ABED7F42161AD3000972552 /* ServerConnectionConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ABED7DA2161AB4F00972552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABED8022161B34300972552 /* ServerConnectionTests.swift in Sources */,
+				1ABED8002161B03800972552 /* RequestPostAllTests.swift in Sources */,
+				1A53FDD32164371E003C8B4D /* JSONFeedAuthorTests.swift in Sources */,
+				1ABED8142161C9AC00972552 /* JSONFeedItemTests.swift in Sources */,
+				1A53FDD72164375F003C8B4D /* JSONFeedTests.swift in Sources */,
+				1A53FDD52164373F003C8B4D /* JSONFeedAttachmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ABED7E02161AB4F00972552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ABED7CB2161AB4E00972552 /* MicroBlogDemo */;
+			targetProxy = 1ABED7DF2161AB4F00972552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1ABED7D52161AB4F00972552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ABED7D62161AB4F00972552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ABED7E52161AB4F00972552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ABED7E62161AB4F00972552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1ABED7E82161AB4F00972552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MicroBlogDemo/MicroBlogDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PGECQ2T33X;
+				INFOPLIST_FILE = MicroBlogDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zornlabs.MicroBlogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1ABED7E92161AB4F00972552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MicroBlogDemo/MicroBlogDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PGECQ2T33X;
+				INFOPLIST_FILE = MicroBlogDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zornlabs.MicroBlogDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		1ABED7EB2161AB4F00972552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PGECQ2T33X;
+				INFOPLIST_FILE = MicroBlogDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zornlabs.MicroBlogDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroBlogDemo.app/Contents/MacOS/MicroBlogDemo";
+			};
+			name = Debug;
+		};
+		1ABED7EC2161AB4F00972552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = PGECQ2T33X;
+				INFOPLIST_FILE = MicroBlogDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zornlabs.MicroBlogDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MicroBlogDemo.app/Contents/MacOS/MicroBlogDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ABED7C72161AB4E00972552 /* Build configuration list for PBXProject "MicroBlogDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABED7E52161AB4F00972552 /* Debug */,
+				1ABED7E62161AB4F00972552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ABED7E72161AB4F00972552 /* Build configuration list for PBXNativeTarget "MicroBlogDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABED7E82161AB4F00972552 /* Debug */,
+				1ABED7E92161AB4F00972552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ABED7EA2161AB4F00972552 /* Build configuration list for PBXNativeTarget "MicroBlogDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ABED7EB2161AB4F00972552 /* Debug */,
+				1ABED7EC2161AB4F00972552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ABED7C42161AB4E00972552 /* Project object */;
+}
