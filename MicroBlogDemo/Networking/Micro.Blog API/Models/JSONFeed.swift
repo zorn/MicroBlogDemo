@@ -171,6 +171,16 @@ extension JSONFeed {
 }
 
 extension JSONFeed {
+    
+    struct Tools {
+        
+        static var standardDecoder: JSONDecoder {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .formatted(JSONFeed.Formatters.dateFormatter)
+            return decoder
+        }
+    }
+    
     struct Formatters {
         
         /// A dateFormatter for the expected RFC 3339 format

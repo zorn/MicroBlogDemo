@@ -12,15 +12,15 @@ class ServerConnectionTests: XCTestCase {
     func test_logIn_WithNoSession_shouldMakeSession() {
         let connection = ServerConnection(configuration: TestingConfiguration())
         XCTAssertNil(connection.session)
-        try! connection.logIn()
+        try! connection.logIn(appToken: "sample")
         XCTAssertNotNil(connection.session)
     }
     
     func test_logIn_WithSession_shouldThrowError() {
         let connection = ServerConnection(configuration: TestingConfiguration())
-        try! connection.logIn()
+        try! connection.logIn(appToken: "sample")
         XCTAssertNotNil(connection.session)
-        XCTAssertThrowsError(try connection.logIn()) { error in
+        XCTAssertThrowsError(try connection.logIn(appToken: "sample")) { error in
             XCTAssertEqual(error as! ServerConnectionError, ServerConnectionError.logInNotAllowedWithCurrentSession)
         }
     }
@@ -28,7 +28,7 @@ class ServerConnectionTests: XCTestCase {
     func test_logOut_WithSession_shouldMakeSessionNil() {
         let connection = ServerConnection(configuration: TestingConfiguration())
         XCTAssertNil(connection.session)
-        try! connection.logIn()
+        try! connection.logIn(appToken: "sample")
         XCTAssertNotNil(connection.session)
         try! connection.logOut()
         XCTAssertNil(connection.session)
@@ -41,7 +41,7 @@ class ServerConnectionTests: XCTestCase {
             XCTAssertEqual(error as! ServerConnectionError, ServerConnectionError.logOutNotAllowedWithNoSession)
         }
     }
-    
+        
     // FIXME: Move these to their own file?
     
     func test_processRequest_withAnyState_shouldReturnRequestToken() {
