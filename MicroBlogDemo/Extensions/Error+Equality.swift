@@ -9,7 +9,6 @@ public func areEqual(_ lhs: Error, _ rhs: Error) -> Bool {
     return lhs.reflectedString == rhs.reflectedString
 }
 
-
 public extension Error {
     var reflectedString: String {
         // NOTE 1: We can just use the standard reflection for our case
@@ -22,7 +21,6 @@ public extension Error {
     }
     
 }
-
 
 public extension NSError {
     // prevents scenario where one would cast swift Error to NSError
