@@ -17,7 +17,7 @@ class ServerConnectionProductionTests: XCTestCase {
             XCTAssertNotNil(response)
             
             if let r = response as? ResponsePostsAll {
-                XCTAssertEqual(r.jsonFeed.items.count, 40)
+                XCTAssertEqual(r.jsonFeed.items.count, 39)
             } else {
                 XCTFail()
             }

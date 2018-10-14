@@ -15,8 +15,16 @@ enum ServerConnectionError: Error, Equatable {
             return areEqual(a, b)
         case let (.unexpectedInternalError(a), .unexpectedInternalError(b)):
             return areEqual(a, b)
+        case (.logInNotAllowedWithCurrentSession, .logInNotAllowedWithCurrentSession):
+            return true
+        case (.logOutNotAllowedWithNoSession, .logOutNotAllowedWithNoSession):
+            return true
+        case (.sessionRequired, .sessionRequired):
+            return true
+        case (.emptyResponse, .emptyResponse):
+            return true
         default:
-            return lhs == rhs
+            return false
         }
     }
 }
