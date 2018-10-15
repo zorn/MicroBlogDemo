@@ -16,8 +16,13 @@
 		1AB645C82173FA1800246F50 /* NewPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645C72173FA1800246F50 /* NewPostRequest.swift */; };
 		1AB645CA2173FA3B00246F50 /* NewPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645C92173FA3B00246F50 /* NewPostResponse.swift */; };
 		1AB645CC2173FE5E00246F50 /* MicroPubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645CB2173FE5E00246F50 /* MicroPubError.swift */; };
+		1AB645D1217422DF00246F50 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645CF217422DF00246F50 /* TimelineViewController.swift */; };
+		1AB645D2217422DF00246F50 /* TimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB645D0217422DF00246F50 /* TimelineViewController.xib */; };
+		1AB645D42174246D00246F50 /* TimelineWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645D32174246D00246F50 /* TimelineWindowController.swift */; };
+		1AB645D621742C4900246F50 /* timeline-example.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AB645D521742C4900246F50 /* timeline-example.json */; };
+		1AB645D82174379500246F50 /* TimelinePostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645D72174379500246F50 /* TimelinePostCellView.swift */; };
+		1AB645DA217437B100246F50 /* TimelinePostCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB645D9217437B100246F50 /* TimelinePostCellView.xib */; };
 		1ABED7D02161AB4E00972552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7CF2161AB4E00972552 /* AppDelegate.swift */; };
-		1ABED7D22161AB4E00972552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7D12161AB4E00972552 /* ViewController.swift */; };
 		1ABED7D42161AB4F00972552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED7D32161AB4F00972552 /* Assets.xcassets */; };
 		1ABED7D72161AB4F00972552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED7D52161AB4F00972552 /* Main.storyboard */; };
 		1ABED7F02161ACDB00972552 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7EF2161ACDB00972552 /* Session.swift */; };
@@ -57,9 +62,14 @@
 		1AB645C72173FA1800246F50 /* NewPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostRequest.swift; sourceTree = "<group>"; };
 		1AB645C92173FA3B00246F50 /* NewPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostResponse.swift; sourceTree = "<group>"; };
 		1AB645CB2173FE5E00246F50 /* MicroPubError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroPubError.swift; sourceTree = "<group>"; };
+		1AB645CF217422DF00246F50 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		1AB645D0217422DF00246F50 /* TimelineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineViewController.xib; sourceTree = "<group>"; };
+		1AB645D32174246D00246F50 /* TimelineWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineWindowController.swift; sourceTree = "<group>"; };
+		1AB645D521742C4900246F50 /* timeline-example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "timeline-example.json"; sourceTree = "<group>"; };
+		1AB645D72174379500246F50 /* TimelinePostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePostCellView.swift; sourceTree = "<group>"; };
+		1AB645D9217437B100246F50 /* TimelinePostCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelinePostCellView.xib; sourceTree = "<group>"; };
 		1ABED7CC2161AB4E00972552 /* MicroBlogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroBlogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABED7CF2161AB4E00972552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1ABED7D12161AB4E00972552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1ABED7D32161AB4F00972552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ABED7D62161AB4F00972552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ABED7D82161AB4F00972552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +118,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1AB645CD217422B100246F50 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1AB645CE217422C000246F50 /* Timeline */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		1AB645CE217422C000246F50 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				1AB645D32174246D00246F50 /* TimelineWindowController.swift */,
+				1AB645CF217422DF00246F50 /* TimelineViewController.swift */,
+				1AB645D0217422DF00246F50 /* TimelineViewController.xib */,
+				1AB645D72174379500246F50 /* TimelinePostCellView.swift */,
+				1AB645D9217437B100246F50 /* TimelinePostCellView.xib */,
+				1AB645D521742C4900246F50 /* timeline-example.json */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
 		1ABED7C32161AB4E00972552 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +164,7 @@
 				1ABED7CF2161AB4E00972552 /* AppDelegate.swift */,
 				1A53FDDC21644C05003C8B4D /* Extensions */,
 				1ABED7EE2161AC2E00972552 /* Networking */,
-				1ABED7D12161AB4E00972552 /* ViewController.swift */,
+				1AB645CD217422B100246F50 /* Interface */,
 				1ABED7D32161AB4F00972552 /* Assets.xcassets */,
 				1ABED7D52161AB4F00972552 /* Main.storyboard */,
 				1ABED7D82161AB4F00972552 /* Info.plist */,
@@ -329,6 +360,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB645D2217422DF00246F50 /* TimelineViewController.xib in Resources */,
+				1AB645D621742C4900246F50 /* timeline-example.json in Resources */,
+				1AB645DA217437B100246F50 /* TimelinePostCellView.xib in Resources */,
 				1ABED7D42161AB4F00972552 /* Assets.xcassets in Resources */,
 				1ABED7D72161AB4F00972552 /* Main.storyboard in Resources */,
 			);
@@ -356,7 +390,7 @@
 				1ABED7F22161ACF100972552 /* ServerConnection.swift in Sources */,
 				1ABED80A2161B67400972552 /* JSONFeed.swift in Sources */,
 				1ABED7F72161ADAF00972552 /* MicroBlogConfiguration.swift in Sources */,
-				1ABED7D22161AB4E00972552 /* ViewController.swift in Sources */,
+				1AB645D42174246D00246F50 /* TimelineWindowController.swift in Sources */,
 				1AB645C82173FA1800246F50 /* NewPostRequest.swift in Sources */,
 				1ABED7FD2161AF1D00972552 /* RequestPostsAll.swift in Sources */,
 				1ABED7D02161AB4E00972552 /* AppDelegate.swift in Sources */,
@@ -364,7 +398,9 @@
 				1A53FDDE21644C1A003C8B4D /* Error+Equality.swift in Sources */,
 				1ABED7F02161ACDB00972552 /* Session.swift in Sources */,
 				1ABED8042161B4AA00972552 /* ResponsePostsAll.swift in Sources */,
+				1AB645D82174379500246F50 /* TimelinePostCellView.swift in Sources */,
 				1ABED7F42161AD3000972552 /* ServerConnectionConfiguration.swift in Sources */,
+				1AB645D1217422DF00246F50 /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

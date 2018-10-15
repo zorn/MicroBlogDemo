@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="XTt-S0-pdU" customClass="TimelinePostCellView" customModule="MicroBlogDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CWg-cy-daf">
+                    <rect key="frame" x="20" y="50" width="235" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Name" drawsBackground="YES" id="SBs-mm-w4L">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U0Z-eB-UV3">
+                    <rect key="frame" x="20" y="25" width="235" height="17"/>
+                    <textFieldCell key="cell" title="Content" drawsBackground="YES" id="7IG-eT-WsZ">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.1061355695" green="1" blue="0.106134221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2LN-2A-sLb">
+                    <rect key="frame" x="20" y="0.0" width="235" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Date" drawsBackground="YES" id="fZI-Ta-RTC">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CWg-cy-daf" firstAttribute="top" secondItem="XTt-S0-pdU" secondAttribute="top" constant="20" id="3M8-ug-ZZ9"/>
+                <constraint firstItem="U0Z-eB-UV3" firstAttribute="top" secondItem="CWg-cy-daf" secondAttribute="bottom" constant="8" id="4xj-Uu-7Cu"/>
+                <constraint firstAttribute="trailing" secondItem="CWg-cy-daf" secondAttribute="trailing" constant="20" id="Fuf-1q-U4f"/>
+                <constraint firstItem="2LN-2A-sLb" firstAttribute="top" secondItem="U0Z-eB-UV3" secondAttribute="bottom" constant="8" id="Ixp-ot-uED"/>
+                <constraint firstAttribute="trailing" secondItem="2LN-2A-sLb" secondAttribute="trailing" constant="20" id="eEv-BW-mSd"/>
+                <constraint firstItem="CWg-cy-daf" firstAttribute="leading" secondItem="XTt-S0-pdU" secondAttribute="leading" constant="20" id="jc1-tD-QAl"/>
+                <constraint firstAttribute="trailing" secondItem="U0Z-eB-UV3" secondAttribute="trailing" constant="20" id="kuS-oA-pFX"/>
+                <constraint firstItem="2LN-2A-sLb" firstAttribute="leading" secondItem="XTt-S0-pdU" secondAttribute="leading" constant="20" id="uYq-FP-lqn"/>
+                <constraint firstAttribute="bottom" secondItem="2LN-2A-sLb" secondAttribute="bottom" id="yv0-MN-JEl"/>
+                <constraint firstItem="U0Z-eB-UV3" firstAttribute="leading" secondItem="XTt-S0-pdU" secondAttribute="leading" constant="20" id="zYB-NC-M3M"/>
+            </constraints>
+            <connections>
+                <outlet property="contentTextField" destination="U0Z-eB-UV3" id="LXN-lm-7QX"/>
+                <outlet property="dateTextField" destination="2LN-2A-sLb" id="7c9-p7-yt2"/>
+                <outlet property="nameTextField" destination="CWg-cy-daf" id="ahP-ND-Qwz"/>
+            </connections>
+            <point key="canvasLocation" x="-69.5" y="-32.5"/>
+        </customView>
+    </objects>
+</document>
