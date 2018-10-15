@@ -13,6 +13,9 @@
 		1A53FDD921644757003C8B4D /* ServerConnectionProductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDD821644757003C8B4D /* ServerConnectionProductionTests.swift */; };
 		1A53FDDB216447E2003C8B4D /* TestSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDDA216447E2003C8B4D /* TestSecrets.swift */; };
 		1A53FDDE21644C1A003C8B4D /* Error+Equality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDDD21644C1A003C8B4D /* Error+Equality.swift */; };
+		1AB645C82173FA1800246F50 /* NewPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645C72173FA1800246F50 /* NewPostRequest.swift */; };
+		1AB645CA2173FA3B00246F50 /* NewPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645C92173FA3B00246F50 /* NewPostResponse.swift */; };
+		1AB645CC2173FE5E00246F50 /* MicroPubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645CB2173FE5E00246F50 /* MicroPubError.swift */; };
 		1ABED7D02161AB4E00972552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7CF2161AB4E00972552 /* AppDelegate.swift */; };
 		1ABED7D22161AB4E00972552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7D12161AB4E00972552 /* ViewController.swift */; };
 		1ABED7D42161AB4F00972552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED7D32161AB4F00972552 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		1A53FDD821644757003C8B4D /* ServerConnectionProductionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnectionProductionTests.swift; sourceTree = "<group>"; };
 		1A53FDDA216447E2003C8B4D /* TestSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSecrets.swift; sourceTree = "<group>"; };
 		1A53FDDD21644C1A003C8B4D /* Error+Equality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Equality.swift"; sourceTree = "<group>"; };
+		1AB645C72173FA1800246F50 /* NewPostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostRequest.swift; sourceTree = "<group>"; };
+		1AB645C92173FA3B00246F50 /* NewPostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostResponse.swift; sourceTree = "<group>"; };
+		1AB645CB2173FE5E00246F50 /* MicroPubError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroPubError.swift; sourceTree = "<group>"; };
 		1ABED7CC2161AB4E00972552 /* MicroBlogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroBlogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABED7CF2161AB4E00972552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ABED7D12161AB4E00972552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +190,8 @@
 				1ABED8052161B4AF00972552 /* Models */,
 				1ABED7FC2161AF1D00972552 /* RequestPostsAll.swift */,
 				1ABED8032161B4AA00972552 /* ResponsePostsAll.swift */,
+				1AB645C72173FA1800246F50 /* NewPostRequest.swift */,
+				1AB645C92173FA3B00246F50 /* NewPostResponse.swift */,
 			);
 			path = "Micro.Blog API";
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				1ABED8092161B67400972552 /* JSONFeed.swift */,
+				1AB645CB2173FE5E00246F50 /* MicroPubError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -342,10 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB645CA2173FA3B00246F50 /* NewPostResponse.swift in Sources */,
+				1AB645CC2173FE5E00246F50 /* MicroPubError.swift in Sources */,
 				1ABED7F22161ACF100972552 /* ServerConnection.swift in Sources */,
 				1ABED80A2161B67400972552 /* JSONFeed.swift in Sources */,
 				1ABED7F72161ADAF00972552 /* MicroBlogConfiguration.swift in Sources */,
 				1ABED7D22161AB4E00972552 /* ViewController.swift in Sources */,
+				1AB645C82173FA1800246F50 /* NewPostRequest.swift in Sources */,
 				1ABED7FD2161AF1D00972552 /* RequestPostsAll.swift in Sources */,
 				1ABED7D02161AB4E00972552 /* AppDelegate.swift in Sources */,
 				1ABED7FB2161AED200972552 /* RequestResponseProtocols.swift in Sources */,

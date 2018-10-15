@@ -8,6 +8,7 @@ enum ServerConnectionError: Error, Equatable {
     case badJSONParse(Error)
     case unexpectedInternalError(Error)
     case emptyResponse
+    case unexpectedNonHTTPURLResponse
     
     static func == (lhs: ServerConnectionError, rhs: ServerConnectionError) -> Bool {
         switch (lhs, rhs) {
@@ -22,6 +23,8 @@ enum ServerConnectionError: Error, Equatable {
         case (.sessionRequired, .sessionRequired):
             return true
         case (.emptyResponse, .emptyResponse):
+            return true
+        case (.unexpectedNonHTTPURLResponse, .unexpectedNonHTTPURLResponse):
             return true
         default:
             return false
@@ -73,32 +76,52 @@ class ServerConnection: NSObject {
         let url = configuration.host.appendingPathComponent(request.path)
 
         let sessionConfig = URLSessionConfiguration.default
-        //sessionConfig.httpAdditionalHeaders = ["Authorization": "Bearer \(session.appToken)"]
+
         let urlSession = URLSession(configuration: sessionConfig)
+        
+        var urlRequest = URLRequest(url: url)
+        
+        urlRequest.addValue("Bearer \(session.appToken)", forHTTPHeaderField: "Authorization")
+        
+        urlRequest.httpMethod = request.method.rawValue
+        
+        if let bodyData = request.body {
+            urlRequest.httpBody = bodyData
+        }
+        
+        if let newHeaders = request.headers {
+            for h in newHeaders {
+                for key in h.keys {
+                    if let value = h[key] {
+                        urlRequest.addValue(value, forHTTPHeaderField: key)
+                    }
+                }
+            }
+        }
+        
         // FIXME: Who owns the task?
-        var request = URLRequest(url: url)
-        request.addValue("Bearer \(session.appToken)", forHTTPHeaderField: "Authorization")
-        let task = urlSession.dataTask(with: request) { (data, response, error) in
+        let task = urlSession.dataTask(with: urlRequest) { (data, response, error) in
             
-            // FIXME: How do I make this a guard?
+            // Handle the error
             if let error = error {
-                // FIXME: Not sure if I should bother wrapping these? Feel like I should account for all
-                // errors I return and in this case, there is nothing I can do.
                 completion?(nil, ServerConnectionError.unexpectedInternalError(error))
                 return
             }
             
-            guard let data = data else {
-                completion?(nil, ServerConnectionError.emptyResponse)
+            // Cast the response as a HTTP response
+            guard let httpURLResponse = response as? HTTPURLResponse else {
+                completion?(nil, ServerConnectionError.unexpectedNonHTTPURLResponse)
                 return
             }
             
-            // FIXME: Does the HTTPResponse belong in the Response object?
+            // Build response, if possible
             do {
-                let jsonFeed = try JSONFeed.Tools.standardDecoder.decode(JSONFeed.self, from: data)
-                completion?(ResponsePostsAll(jsonFeed: jsonFeed), nil)
+                let string = String(data: data!, encoding: .utf8)
+                print(string)
+                let response = try request.responseType.init(data: data, httpURLResponse: httpURLResponse)
+                completion?(response, nil)
             } catch {
-                completion?(nil, ServerConnectionError.badJSONParse(error))
+                completion?(nil, ServerConnectionError.unexpectedInternalError(error))
             }
         }
         task.resume()
