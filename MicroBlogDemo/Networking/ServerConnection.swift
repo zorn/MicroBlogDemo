@@ -116,8 +116,9 @@ class ServerConnection: NSObject {
             
             // Build response, if possible
             do {
-                let string = String(data: data!, encoding: .utf8)
-                print(string)
+                // Debug help
+                //let string = String(data: data!, encoding: .utf8)
+                //print(string)
                 let response = try request.responseType.init(data: data, httpURLResponse: httpURLResponse)
                 completion?(response, nil)
             } catch {
