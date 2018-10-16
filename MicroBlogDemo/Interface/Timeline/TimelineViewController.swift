@@ -12,6 +12,8 @@ class TimelineViewController: NSViewController {
         
         let nib = NSNib(nibNamed: TimelinePostCellView.cellIdentifier.rawValue, bundle: nil)
         tableView.register(nib, forIdentifier: TimelinePostCellView.cellIdentifier)
+        
+        //tableView.rowHeight = 122.0 // estimated row height
     }
     
     private func loadDemoContent() {

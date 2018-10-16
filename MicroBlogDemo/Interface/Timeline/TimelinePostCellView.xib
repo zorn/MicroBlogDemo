@@ -29,17 +29,17 @@
                         <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </textFieldCell>
                 </textField>
-                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beQ-hv-J94">
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beQ-hv-J94">
                     <rect key="frame" x="20" y="25" width="235" height="52"/>
                     <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="vey-4L-Qvb">
-                        <rect key="frame" x="0.0" y="0.0" width="220" height="52"/>
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="52"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView editable="NO" selectable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="I02-V6-XI8">
-                                <rect key="frame" x="0.0" y="0.0" width="220" height="52"/>
+                                <rect key="frame" x="0.0" y="0.0" width="235" height="52"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="minSize" width="220" height="52"/>
+                                <size key="minSize" width="235" height="52"/>
                                 <size key="maxSize" width="263" height="10000000"/>
                                 <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             </textView>
@@ -48,8 +48,8 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="52" id="hoy-uN-qA2"/>
                     </constraints>
-                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="Taa-sT-tgt">
-                        <rect key="frame" x="220" y="0.0" width="15" height="52"/>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Taa-sT-tgt">
+                        <rect key="frame" x="-100" y="-100" width="15" height="52"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>
@@ -68,6 +68,7 @@
             </constraints>
             <connections>
                 <outlet property="contentTextView" destination="I02-V6-XI8" id="V2x-M0-Th5"/>
+                <outlet property="contentTextViewHeightConstraint" destination="hoy-uN-qA2" id="pWy-zv-aQR"/>
                 <outlet property="dateTextField" destination="2LN-2A-sLb" id="7c9-p7-yt2"/>
                 <outlet property="nameTextField" destination="CWg-cy-daf" id="ahP-ND-Qwz"/>
             </connections>
