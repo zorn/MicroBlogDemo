@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A262CD521826FAB000AC582 /* TimelinePostWebViewCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A262CD421826FAB000AC582 /* TimelinePostWebViewCellView.swift */; };
-		1A262CD721826FC8000AC582 /* TimelinePostWebViewCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A262CD621826FC8000AC582 /* TimelinePostWebViewCellView.xib */; };
 		1A53FDD32164371E003C8B4D /* JSONFeedAuthorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDD22164371E003C8B4D /* JSONFeedAuthorTests.swift */; };
 		1A53FDD52164373F003C8B4D /* JSONFeedAttachmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDD42164373F003C8B4D /* JSONFeedAttachmentTests.swift */; };
 		1A53FDD72164375F003C8B4D /* JSONFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53FDD62164375F003C8B4D /* JSONFeedTests.swift */; };
@@ -22,8 +20,6 @@
 		1AB645D2217422DF00246F50 /* TimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB645D0217422DF00246F50 /* TimelineViewController.xib */; };
 		1AB645D42174246D00246F50 /* TimelineWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645D32174246D00246F50 /* TimelineWindowController.swift */; };
 		1AB645D621742C4900246F50 /* timeline-example.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AB645D521742C4900246F50 /* timeline-example.json */; };
-		1AB645D82174379500246F50 /* TimelinePostCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB645D72174379500246F50 /* TimelinePostCellView.swift */; };
-		1AB645DA217437B100246F50 /* TimelinePostCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AB645D9217437B100246F50 /* TimelinePostCellView.xib */; };
 		1ABED7D02161AB4E00972552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABED7CF2161AB4E00972552 /* AppDelegate.swift */; };
 		1ABED7D42161AB4F00972552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED7D32161AB4F00972552 /* Assets.xcassets */; };
 		1ABED7D72161AB4F00972552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABED7D52161AB4F00972552 /* Main.storyboard */; };
@@ -54,8 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A262CD421826FAB000AC582 /* TimelinePostWebViewCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePostWebViewCellView.swift; sourceTree = "<group>"; };
-		1A262CD621826FC8000AC582 /* TimelinePostWebViewCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelinePostWebViewCellView.xib; sourceTree = "<group>"; };
 		1A53FDD121642E7B003C8B4D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1A53FDD22164371E003C8B4D /* JSONFeedAuthorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedAuthorTests.swift; sourceTree = "<group>"; };
 		1A53FDD42164373F003C8B4D /* JSONFeedAttachmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFeedAttachmentTests.swift; sourceTree = "<group>"; };
@@ -70,8 +64,6 @@
 		1AB645D0217422DF00246F50 /* TimelineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineViewController.xib; sourceTree = "<group>"; };
 		1AB645D32174246D00246F50 /* TimelineWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineWindowController.swift; sourceTree = "<group>"; };
 		1AB645D521742C4900246F50 /* timeline-example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "timeline-example.json"; sourceTree = "<group>"; };
-		1AB645D72174379500246F50 /* TimelinePostCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePostCellView.swift; sourceTree = "<group>"; };
-		1AB645D9217437B100246F50 /* TimelinePostCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelinePostCellView.xib; sourceTree = "<group>"; };
 		1ABED7CC2161AB4E00972552 /* MicroBlogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroBlogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ABED7CF2161AB4E00972552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ABED7D32161AB4F00972552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,11 +128,7 @@
 				1AB645D32174246D00246F50 /* TimelineWindowController.swift */,
 				1AB645CF217422DF00246F50 /* TimelineViewController.swift */,
 				1AB645D0217422DF00246F50 /* TimelineViewController.xib */,
-				1AB645D72174379500246F50 /* TimelinePostCellView.swift */,
-				1AB645D9217437B100246F50 /* TimelinePostCellView.xib */,
 				1AB645D521742C4900246F50 /* timeline-example.json */,
-				1A262CD421826FAB000AC582 /* TimelinePostWebViewCellView.swift */,
-				1A262CD621826FC8000AC582 /* TimelinePostWebViewCellView.xib */,
 			);
 			path = Timeline;
 			sourceTree = "<group>";
@@ -367,9 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB645D2217422DF00246F50 /* TimelineViewController.xib in Resources */,
-				1A262CD721826FC8000AC582 /* TimelinePostWebViewCellView.xib in Resources */,
 				1AB645D621742C4900246F50 /* timeline-example.json in Resources */,
-				1AB645DA217437B100246F50 /* TimelinePostCellView.xib in Resources */,
 				1ABED7D42161AB4F00972552 /* Assets.xcassets in Resources */,
 				1ABED7D72161AB4F00972552 /* Main.storyboard in Resources */,
 			);
@@ -404,9 +390,7 @@
 				1ABED7FB2161AED200972552 /* RequestResponseProtocols.swift in Sources */,
 				1A53FDDE21644C1A003C8B4D /* Error+Equality.swift in Sources */,
 				1ABED7F02161ACDB00972552 /* Session.swift in Sources */,
-				1A262CD521826FAB000AC582 /* TimelinePostWebViewCellView.swift in Sources */,
 				1ABED8042161B4AA00972552 /* ResponsePostsAll.swift in Sources */,
-				1AB645D82174379500246F50 /* TimelinePostCellView.swift in Sources */,
 				1ABED7F42161AD3000972552 /* ServerConnectionConfiguration.swift in Sources */,
 				1AB645D1217422DF00246F50 /* TimelineViewController.swift in Sources */,
 			);
